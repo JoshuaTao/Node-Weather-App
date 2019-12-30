@@ -12,8 +12,8 @@ form.addEventListener("submit", e => {
       if (data.error) {
         messageOne.textContent = data.error;
       } else {
-        messageOne.textContent = `location: ${data.location}`;
-        messageTwo.textContent = `forecast: ${data.forecast}`;
+        messageOne.textContent = `Location: ${data.location}`;
+        messageTwo.textContent = `Forecast: ${data.forecast}`;
       }
     });
 });

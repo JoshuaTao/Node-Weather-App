@@ -10,7 +10,7 @@ const forecast = (longitude, latitude, callback) => {
     } else {
       callback(
         undefined,
-        `${body.daily.data[0].summary}.The highest/lowest temperature is ${body.daily.data[0].temperatureMax}/${body.daily.data[0].temperatureMin} degrees.It is currently ${body.currently.temperature} degrees out.There is a ${body.currently.precipProbability}% chance of rain.`
+        `${body.daily.data[0].summary} The highest/lowest temperature is ${body.daily.data[0].temperatureMax}/${body.daily.data[0].temperatureMin} degrees.It is currently ${body.currently.temperature} degrees out.There is a ${body.currently.precipProbability}% chance of rain.`
       );
     }
   });
